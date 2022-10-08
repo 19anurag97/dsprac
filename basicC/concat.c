@@ -8,7 +8,6 @@ int main(){
     
     int i=0;
     char str1[MAX], str2[MAX];
-    
     printf("\n Enter string1:");
     scanf("%s", str1);
     //fgets(str1, MAX, stdin);
