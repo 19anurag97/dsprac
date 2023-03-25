@@ -7,8 +7,9 @@
     
     Thus, the sizeof(int) is 2 bytes for a 16-bit machine and 4 bytes for a 32-bit and 64-bit machine.
     
-    WORD SIZE ? : It determines how many bytes can be transferred 
-    between CPU and memory in one memory "cycle".(Data bus size)
+    WORD SIZE ? : 
+    Processor Word Size is the amount of data that internal data registers
+    of the CPU can capture and process the data at a time.
     
     The word size is the main determining factor in finding the size of the pointer.
     the size of a char pointer in a 32-bit processor is 4 bytes,
