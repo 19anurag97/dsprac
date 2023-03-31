@@ -1,3 +1,9 @@
+/*
+Change number %d -> 22 into string format %s -> "22"
+input : 37 (in integer)
+output : 37 (in string)
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
