@@ -1,0 +1,15 @@
+Tree Data Structure.
+It is a hierarchical data Structure. Unlike Array/Linkedlists.
+
+Tree Traversal Techniques:
+
+(1) DFS
+-> Inorder {Left -> Root -> Right}
+-> Preorder
+-> Postorder
+
+(2) BFS (Level Order)
+
+
+Time Complexity - It takes worst case time complexity of O(n) during Insertion/Deletion/Searching operations,
+                    where n is total number of nodes in a tree.
