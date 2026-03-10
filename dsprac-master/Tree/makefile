@@ -8,3 +8,10 @@ OBJ = Tree_src.o Tree_main.o
 
 RunTreeProgram: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
+
+# Target binary name
+TARGET = RunTreeProgram.exe
+
+# Clean rule
+clean:
+	del /Q $(OBJ) $(TARGET)

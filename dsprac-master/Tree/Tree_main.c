@@ -1,5 +1,4 @@
 #include "tree_support.h"
-#include "Tree_src.c"
 
 int main(void)
 {
