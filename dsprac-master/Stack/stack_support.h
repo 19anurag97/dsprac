@@ -18,8 +18,10 @@ bool isEmpty(Stack *st);
 bool isFull(Stack *st);
 void init_stack(Stack *st);
 void push_stack(Stack *st, int data);
-void pop_stack(Stack *st);
+int pop_stack(Stack *st);
 void peek_stack(Stack *st);
+void display_stack(Stack *st);
+void stack_sort(Stack *st);
 #endif  //STACK_SUPPORT_H
 
 

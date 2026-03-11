@@ -22,13 +22,14 @@ void push_stack(Stack *st, int data){
     st->arr[st->top] = data;
 }
 
-void pop_stack(Stack *st){
+int pop_stack(Stack *st){
     if (isEmpty(st))
     {
         printf("\nisEmpty");
-        return;
+        return -1;
     }
     st->top--;
+    return st->arr[st->top + 1];
 }
 
 void peek_stack(Stack *st){
@@ -38,4 +39,34 @@ void peek_stack(Stack *st){
         return;
     }
     printf("\npeeked top-> %d", st->arr[st->top]);
+}
+
+void stack_sort(Stack *st){
+    Stack tempStack;
+    init_stack(&tempStack);
+
+	while(!isEmpty(st)){
+        int tmp = pop_stack(st);
+	    while(!isEmpty(&tempStack) && tempStack.arr[tempStack.top] > tmp){
+	        push_stack(st, pop_stack(&tempStack));
+	    }
+	    push_stack(&tempStack, tmp);
+	}
+	
+	while(!isEmpty(&tempStack)){
+	    push_stack(st, pop_stack(&tempStack));
+	}
+}
+
+void display_stack(Stack *st){
+    if (isEmpty(st))
+    {
+        printf("\nisEmpty");
+        return;
+    }
+    printf("\nStack elements: ");
+    for (int i = st->top; i >= 0; i--)
+    {
+        printf("%d ", st->arr[i]);
+    }
 }
